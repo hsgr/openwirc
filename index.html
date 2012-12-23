@@ -1,0 +1,67 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Open Web IRC</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<!--<link rel="stylesheet" href="icons/font-awesome/jqm-icon-pack-2.1.2-fa.css" />
+	<link rel="stylesheet" href="icons/original/jqm-icon-pack-2.0-original.css" />-->
+
+	<link rel="stylesheet" href="style.css" />
+</head> 
+
+<body> 
+
+
+<!-- Start of main page -->
+<div data-role="page" id="main">
+
+	<div data-role="header">
+		<a href="#intro" data-icon="arrow-l" data-direction="reverse" data-iconpos="notext" data-transition="slide">Back</a>
+		<span class="ui-title" />
+		<div class="ui-btn-right" data-role="controlgroup" data-type="horizontal" id="main-nav-buttons">
+			<a href="#settings" data-iconpos="notext" data-icon="gear" data-role="button"></a>
+			<a href="#" data-iconpos="notext" data-icon="user" data-role="button"></a>
+			<a href="#" data-iconpos="notext" data-icon="grid" data-role="button"></a>
+		</div>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
+		<p><a href="#intro" data-transition="slide">Back to intro</a></p>	
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" class="ui-grid-a">
+		<div class="ui-block-a">
+			<input type="text" name="name" id="basic" value=""/>
+		</div>
+		<div class="ui-block-b">
+			<a href="#" data-role="button">Send</a>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of Settings page -->
+<div data-role="page" id="settings">
+
+	<div data-role="header">
+		<h1>Settings</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>I'm first in the source order so I'm shown as the page.</p>		
+		<p>View internal page called <a href="#main" data-transition="slide">main</a></p>	
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>by fredy</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>
